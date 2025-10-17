@@ -112,19 +112,20 @@ Foreign keys make sure every “pointer” in the database always refers to some
 
 ## 4) Kort ER-modell (tekstlig)
 
-    ![ER-diagram for ga_bibliotek](https://i.ibb.co/FkXrqWKv/oppgave1.png)
+![ER-diagram for ga_bibliotek](https://i.ibb.co/FkXrqWKv/oppgave1.png)
 
-## Diagram Explanation:
+### Diagram Explanation:
 - Each box (like bok, låner, utlån, eksemplar) represents a table (entity).
+
 ### Inside each box, you list:
 - PK: → Primary Key (unique identifier for the table)
 - FK: → Foreign Key (points to another table)
+
 ### The arrows and (1:N) show the relationships:
 - (1:N) means “one-to-many” relationship.
 - Example:
--- One bok can have many eksemplar.
--- One låner can have many utlån.
-
+  - One bok can have many eksemplar.
+  - One låner can have many utlån.
 
 #______________________________________
 -- ============================================
