@@ -1,5 +1,4 @@
--- ============================================ Oppgave 1 – ga_bibliotek (database + sample data) ============================================
-
+-- ====================== Oppgave 1 – ga_bibliotek (database + sample data) =======================
 
 -- 1) Skriv en SQL som oppretter databasen ‘ga_bibliotek’.
 --    (Create or select the database)
