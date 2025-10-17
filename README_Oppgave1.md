@@ -5,6 +5,8 @@
 
 -- 1) Skriv en SQL som oppretter databasen ‘ga_bibliotek’.
 --    (Create or select the database)
+```sql
+
 DROP DATABASE IF EXISTS `ga_bibliotek`;
 CREATE DATABASE `ga_bibliotek`
   CHARACTER SET utf8mb4
@@ -166,4 +168,4 @@ JOIN `låner` AS l ON u.`LNr` = l.`LNr`
 JOIN `eksemplar` AS e ON u.`ISBN` = e.`ISBN` AND u.`EksNr` = e.`EksNr`
 JOIN `bok` AS b ON e.`ISBN` = b.`ISBN`
 ORDER BY u.`UtlånsNr`;
--- • Combines all tables to show who borrowed what and when.
+-- • Combines all tables to show who borrowed what and when.```

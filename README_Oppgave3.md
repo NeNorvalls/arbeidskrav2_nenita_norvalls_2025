@@ -2,6 +2,8 @@
 -- Oppgave 3 – SQL Queries for ga_bibliotek
 -- ============================================
 
+```sql
+
 USE ga_bibliotek;
 
 -- 1) Skriv en SQL spørring som henter alle bøker publisert etter år 2000.
@@ -163,4 +165,4 @@ ORDER BY antall_utlån DESC, b.Forfatter;
 -- • SELECT Forfatter, COUNT — Count total loans by author.
 -- • LEFT JOIN utlån ...     — Include authors even with 0 loans.
 -- • GROUP BY Forfatter      — Combine per author.
--- • ORDER BY antall_utlån...— Sort by most borrowed first.
+-- • ORDER BY antall_utlån...— Sort by most borrowed first.```
