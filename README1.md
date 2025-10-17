@@ -94,9 +94,6 @@ Foreign keys make sure every “pointer” in the database always refers to some
 
 
 ## 4) Kort ER-modell (tekstlig)
-
-![ER-diagram for ga_bibliotek](https://i.ibb.co/FkXrqWKv/oppgave1.png)
-
 ### Diagram Explanation:
 - Each box (like bok, låner, utlån, eksemplar) represents a table (entity).
 
@@ -109,3 +106,7 @@ Foreign keys make sure every “pointer” in the database always refers to some
 - Example:
   - One bok can have many eksemplar.
   - One låner can have many utlån.
+
+![ER-diagram for ga_bibliotek](https://i.ibb.co/FkXrqWKv/oppgave1.png)
+
+
