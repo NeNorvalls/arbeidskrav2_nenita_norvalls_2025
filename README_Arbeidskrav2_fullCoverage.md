@@ -144,7 +144,7 @@ Shows who borrowed which book, including title, borrower name, and return status
 
 ## 6. ER Diagram
 
-![ER-diagram for ga_bibliotek](./oppgave1.png)
+![ER-diagram for ga_bibliotek](images/model_diagram.png)
 
 ### Diagram Explanation
 - Each box represents a table.  
