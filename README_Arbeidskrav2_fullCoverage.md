@@ -133,7 +133,7 @@ The database uses constraints to ensure valid and reliable data.
 Example data is inserted into each table to demonstrate how the database works.
 
 **Example Insert:**
-```sql
+
 INSERT INTO bok (ISBN, Tittel, Forfatter, Forlag, UtgittÅr, AntallSider)
 VALUES ('8203188843','Kristin Lavransdatter: Kransen','Undset, Sigrid','Aschehoug',1920,323);
 
