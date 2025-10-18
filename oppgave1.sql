@@ -2,9 +2,6 @@
 -- Oppgave 1 – ga_bibliotek (database + sample data)
 -- ============================================
 
-
--- 1) Skriv en SQL som oppretter databasen ‘ga_bibliotek’.
---    (Create or select the database)
 DROP DATABASE IF EXISTS `ga_bibliotek`;
 CREATE DATABASE `ga_bibliotek`
   CHARACTER SET utf8mb4
@@ -12,9 +9,6 @@ CREATE DATABASE `ga_bibliotek`
 USE `ga_bibliotek`;
 
 
-
--- 2) Skriv en SQL som oppretter tabellen ‘bok’.
---    (Create table ‘bok’ — one row per book title)
 CREATE TABLE `bok` (
   `ISBN`        VARCHAR(20)  PRIMARY KEY,
   `Tittel`      VARCHAR(255) NOT NULL,
@@ -27,9 +21,6 @@ CREATE TABLE `bok` (
   COLLATE = utf8mb4_unicode_ci;
 
 
-
--- 3) Skriv en SQL som oppretter tabellen ‘eksemplar’.
---    (Create table ‘eksemplar’ — physical copies of books)
 CREATE TABLE `eksemplar` (
   `ISBN`  VARCHAR(20) NOT NULL,
   `EksNr` INT         NOT NULL,
@@ -43,8 +34,6 @@ CREATE TABLE `eksemplar` (
   COLLATE = utf8mb4_unicode_ci;
 
 
--- 4) Skriv en SQL som oppretter tabellen ‘låner’.
---    (Create table ‘låner’ — borrowers)
 CREATE TABLE `låner` (
   `LNr`       INT AUTO_INCREMENT PRIMARY KEY,
   `Fornavn`   VARCHAR(50)  NOT NULL,
@@ -55,9 +44,6 @@ CREATE TABLE `låner` (
   COLLATE = utf8mb4_unicode_ci;
 
 
-
--- 5) Skriv en SQL som oppretter tabellen ‘utlån’.
---    (Create table ‘utlån’ — tracks book loans)
 CREATE TABLE `utlån` (
   `UtlånsNr`   INT AUTO_INCREMENT PRIMARY KEY,
   `LNr`        INT         NOT NULL,
@@ -78,8 +64,6 @@ CREATE TABLE `utlån` (
   COLLATE = utf8mb4_unicode_ci;
 
 
--- 6) Skriv en SQL som legger til eksempeldata i tabellene.
---    (Insert example data into tables)
 INSERT INTO `bok` (`ISBN`, `Tittel`, `Forfatter`, `Forlag`, `UtgittÅr`, `AntallSider`) VALUES
 ('8203188843','Kristin Lavransdatter: Kransen','Undset, Sigrid','Aschehoug',1920,323),
 ('8203190483','Fyret: en ny sak for Dalgliesh','James, P. D.','Aschehoug',2005,413),
@@ -116,8 +100,6 @@ INSERT INTO `utlån` (`LNr`, `ISBN`, `EksNr`, `Utlånsdato`, `Levert`) VALUES
 (7,'8274822231',1,'2022-09-11',1);
 
 
--- 7) Skriv en SQL som verifiserer data i tabellene.
---    (Run simple checks and overviews)
 SELECT COUNT(*) AS `antall_bøker`
 FROM `bok`;
 
