@@ -108,7 +108,7 @@ Foreign keys make sure every “pointer” in the database always refers to some
 - Example:
   - One bok can have many eksemplar.
   - One låner can have many utlån.
-
+```
 DATABASE: ga_bibliotek
 │
 ├── bok
@@ -124,5 +124,5 @@ DATABASE: ga_bibliotek
 └── utlån
      ↳ Records of each borrowing
         (linked to låner by LNr,
-         linked to eksemplar by ISBN+EksNr)
+         linked to eksemplar by ISBN+EksNr)```
 
