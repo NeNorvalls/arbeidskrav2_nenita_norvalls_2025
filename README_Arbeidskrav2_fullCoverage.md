@@ -152,6 +152,24 @@ Shows who borrowed which book, including title, borrower name, and return status
 - The arrows represent relationships between the tables.  
 - **(1:N)** means “one-to-many” — one record in the first table can link to several in the second.
 
+DATABASE: ga_bibliotek
+│
+├── bok
+│    ↳ Book information (title, author, etc.)
+│
+├── eksemplar
+│    ↳ Specific copies of each book
+│       (linked to bok by ISBN)
+│
+├── låner
+│    ↳ People who borrow books
+│
+└── utlån
+     ↳ Records of each borrowing
+        (linked to låner by LNr,
+         linked to eksemplar by ISBN+EksNr)
+
+
 ---
 
 ## 7. Summary

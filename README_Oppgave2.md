@@ -109,4 +109,20 @@ Foreign keys make sure every “pointer” in the database always refers to some
   - One bok can have many eksemplar.
   - One låner can have many utlån.
 
+DATABASE: ga_bibliotek
+│
+├── bok
+│    ↳ Book information (title, author, etc.)
+│
+├── eksemplar
+│    ↳ Specific copies of each book
+│       (linked to bok by ISBN)
+│
+├── låner
+│    ↳ People who borrow books
+│
+└── utlån
+     ↳ Records of each borrowing
+        (linked to låner by LNr,
+         linked to eksemplar by ISBN+EksNr)
 
