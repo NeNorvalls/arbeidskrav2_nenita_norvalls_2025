@@ -151,7 +151,8 @@ Shows who borrowed which book, including title, borrower name, and return status
 - **PK** = Primary Key, **FK** = Foreign Key.  
 - The arrows represent relationships between the tables.  
 - **(1:N)** means “one-to-many” — one record in the first table can link to several in the second.
-
+- 
+```
 DATABASE: ga_bibliotek
 │
 ├── bok
@@ -168,7 +169,7 @@ DATABASE: ga_bibliotek
      ↳ Records of each borrowing
         (linked to låner by LNr,
          linked to eksemplar by ISBN+EksNr)
-
+```
 
 ---
 
