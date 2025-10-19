@@ -183,11 +183,12 @@ DATABASE: ga_bibliotek
       └── Levert     (0 = not returned, 1 = returned)
 ```
 Relationships Visually:
+```
 låner.LNr         ←───→   utlån.LNr
 eksemplar.ISBN    ←───→   utlån.ISBN
 eksemplar.EksNr   ←───→   utlån.EksNr
 bok.ISBN          ←───→   eksemplar.ISBN
-
+```
 ## 6. Summary
 
 This database:
