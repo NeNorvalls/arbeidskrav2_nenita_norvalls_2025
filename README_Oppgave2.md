@@ -159,6 +159,34 @@ linked to eksemplar by ISBN+EksNr)
 
 
 ---
+FINAL DIAGRAM:
+```
+DATABASE: ga_bibliotek
+│
+├── TABLE: bok
+│     └── ISBN (PRIMARY KEY)
+│
+├── TABLE: eksemplar
+│     ├── ISBN (FOREIGN KEY → bok.ISBN)
+│     ├── EksNr
+│     └── PRIMARY KEY (ISBN, EksNr)
+│
+├── TABLE: låner
+│     └── LNr (PRIMARY KEY)
+│
+└── TABLE: utlån
+      ├── UtlånsNr   (AUTO_INCREMENT, PRIMARY KEY)
+      ├── LNr        (FOREIGN KEY → låner.LNr)
+      ├── ISBN       (FOREIGN KEY → eksemplar.ISBN)
+      ├── EksNr      (FOREIGN KEY → eksemplar.EksNr)
+      ├── Utlånsdato (date of loan)
+      └── Levert     (0 = not returned, 1 = returned)
+```
+Relationships Visually:
+låner.LNr         ←───→   utlån.LNr
+eksemplar.ISBN    ←───→   utlån.ISBN
+eksemplar.EksNr   ←───→   utlån.EksNr
+bok.ISBN          ←───→   eksemplar.ISBN
 
 ## 6. Summary
 
