@@ -134,11 +134,26 @@ Together, these constraints guarantee consistency and logical accuracy throughou
 
 ![ER-diagram for ga_bibliotek](images/model_diagram.png)
 
+<<<<<<< HEAD
 ### Diagram Explanation
 - Each box represents a table.  
 - **PK** = Primary Key, **FK** = Foreign Key.  
 - Arrows represent the relationships between tables.  
 - **(1:N)** means “one-to-many” — one record in the first table can relate to several in the second.
+=======
+-- Diagram Explanation:
+- Each box (like bok, låner, utlån, eksemplar) represents a table (entity).
+
+-- Inside each box, you list:
+- PK: → Primary Key (unique identifier for the table)
+- FK: → Foreign Key (points to another table)
+
+-- The arrows and (1:N) show the relationships:
+- (1:N) means “one-to-many” relationship.
+- Example:
+  - One bok can have many eksemplar.
+  - One låner can have many utlån.
+>>>>>>> 95244aaaab92f2aa0e944726f87306e4fdff9ff1
 ```
 DATABASE: ga_bibliotek
 │
@@ -153,10 +168,16 @@ DATABASE: ga_bibliotek
 │ ↳ People who borrow books
 │
 └── utlån
+<<<<<<< HEAD
 ↳ Records of each borrowing
 (linked to låner by LNr,
 linked to eksemplar by ISBN+EksNr)
 ```
+=======
+     ↳ Records of each borrowing
+        (linked to låner by LNr,
+         linked to eksemplar by ISBN+EksNr)```
+>>>>>>> 95244aaaab92f2aa0e944726f87306e4fdff9ff1
 
 
 ---
