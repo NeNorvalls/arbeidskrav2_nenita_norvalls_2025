@@ -139,7 +139,7 @@ Together, these constraints guarantee consistency and logical accuracy throughou
 - **PK** = Primary Key, **FK** = Foreign Key.  
 - Arrows represent the relationships between tables.  
 - **(1:N)** means “one-to-many” — one record in the first table can relate to several in the second.
-
+```
 DATABASE: ga_bibliotek
 │
 ├── bok
@@ -156,7 +156,7 @@ DATABASE: ga_bibliotek
 ↳ Records of each borrowing
 (linked to låner by LNr,
 linked to eksemplar by ISBN+EksNr)
-
+```
 
 ---
 FINAL DIAGRAM:
