@@ -167,4 +167,4 @@ This database:
 - Keeps all relationships correct using **foreign keys**.  
 - Uses **constraints** to ensure clean, consistent, and logical data.  
 - Provides a reliable foundation for queries such as:  
-  *Which borrower has not yet returned a book* or *how many copies exist for a specific title.*
+  *Which borrower has not yet returned a book* or *how many copies exist for a specific title.*git 
