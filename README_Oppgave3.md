@@ -50,7 +50,10 @@ ON DUPLICATE KEY UPDATE
 -- • INSERT INTO bok (...)     — Add a new book row.
 -- • VALUES (...)              — Provide all column values.
 -- • ON DUPLICATE KEY UPDATE   — If ISBN exists, update the data.
-
+                               — if this borrower already exists (for example, same unique key such as Fornavn + Etternavn),
+                                it won’t insert a duplicate — instead, 
+                                it will update the address using the new value (v.Adresse).
+                              
 
 -- 5) Skriv en SQL som legger til en ny låner i tabellen 'låner'.
 --    (Add a new borrower to the table)
